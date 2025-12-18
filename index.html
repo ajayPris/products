@@ -117,12 +117,10 @@
       transform: scale(1.05);
       box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     }
-
-    /* MOBILE VIEW → FORCE 2 COLUMNS */
     @media (max-width: 768px) {
       .products {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
       }
       .header h1 {
         font-size: 28px;
